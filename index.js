@@ -61,10 +61,10 @@ function keysound(key) {
 
 
 function buttonanimation(currentkey) {
-var activeButton = document.querySelector("." + currentkey);
-activeButton.classList.add("pressed");
-
-setTimeout (function (){activeButton.classList.remove("pressed");},100);
-
-
-}
+  var activeButton = document.querySelector("." + currentkey);
+  if (activeButton != null) {
+    activeButton.classList.add("pressed");
+    setTimeout(function() {
+      activeButton.classList.remove("pressed");
+    }, 100);
+  }
