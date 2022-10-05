@@ -18,7 +18,6 @@ for (var i = 0; i < myarr; i++) {
 //main function
 function keysound(key) {
   switch (key) {
-
     case "w":
       var tom1 = new Audio("sounds/tom-1.mp3");
       tom1.play();
@@ -68,3 +67,8 @@ function buttonanimation(currentkey) {
       activeButton.classList.remove("pressed");
     }, 100);
   }
+
+
+
+
+}
